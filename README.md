@@ -11,7 +11,7 @@ The current codebase contains:
 - Benchmark scripts for reproducing multi-model layerwise measurements and DeepSeek-V2 single-layer attention/MoE measurements.
 - The earlier `zkLLM`-style demo scripts for LLaMA components, preserved for reference.
 
-## 1. Repository Layout
+## 0. Repository Layout
 
 ```text
 zkFMoE/
@@ -35,7 +35,7 @@ This release intentionally does not include:
 - figures and tables
 - temporary test outputs
 
-## 0. Model Weights Notice
+## 1. Model Weights Notice
 
 Users must obtain model weights by themselves before running the preparation and benchmark scripts.
 
@@ -49,8 +49,6 @@ In practice, this means:
 - for `OPT-13B`, `Qwen3-32B`, `DeepSeek-V2`, and `DeepSeek-V3.2`, users should download the original local model files first, then point `prepare_*_attn_workdir.py` to those local directories
 - for `LLaMA-2-13B`, users should first obtain the official sharded checkpoint files and `params.json`
 - for `OPT-6.7B`, the current script expects already-exported local `int32` q/k/v weight binaries, so users need to prepare those files separately before running `prepare_opt67_attn_workdir.py`
-
-If you plan to publish this repository publicly, it is recommended to keep the release source-only and let users fetch the weights from the corresponding official model pages.
 
 ## 2. Recommended Environment
 
