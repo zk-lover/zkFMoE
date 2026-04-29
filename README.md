@@ -444,6 +444,4 @@ Note:
 - The current release focuses on reproducibility of the benchmark pipeline, not on packaging a polished training/inference framework.
 - Because this is a CUDA-heavy proving prototype, exact timings depend on GPU model, driver version, and whether other GPU workloads are running.
 
-## 10. License
 
-This repository keeps the original `LICENSE` file from the source project. Please check it before redistributing derived releases.
