@@ -1,0 +1,46 @@
+# Build products
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+
+# Compiled binaries from Makefile
+main
+ppgen
+commit-param
+self-attn
+ffn
+rmsnorm
+skip-connection
+moe-bench
+test_flashmla
+test_online
+test_self_attn
+test_tlookup
+test_zkmoe
+
+# Generated runtime artifacts
+*.bin
+*.log
+*.png
+*.csv
+*.tsv
+temp_*
+model-storage/
+results/
+logs/
+zkllm-workdir/
+fake-workdir/
+fake-workdir-*/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
